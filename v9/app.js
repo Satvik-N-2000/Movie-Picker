@@ -19,7 +19,7 @@ app.set("view engine", "ejs");
 app.use(methodOverride("_method"));
 
 
-// =====================================================
+//
 //      AUTHENTICATION SETUP
 app.use(require("express-session")({
     secret: "Bond, James Bond",
