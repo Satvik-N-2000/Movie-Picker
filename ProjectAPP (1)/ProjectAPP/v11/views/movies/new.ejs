@@ -1,0 +1,61 @@
+<%- include("../partials/header") %>
+
+<div class="container">
+    <form action="/movies" method="POST" class="my-5 px-5">
+        <div class="form-group">
+            <label for="name">Movie Name:</label>
+            <input id="name" type="text" name="name" class="form-control" placeholder="Movie Name">
+        </div>
+        <div class="form-group">
+            <label for="poster">Movie Poster:</label>
+            <input id="poster" type="text" name="poster" class="form-control" placeholder="Movie Poster">
+        </div>
+        <div class="form-group">
+            <label for="img">Movie Image:</label>
+            <input id="img" type="text" name="image" class="form-control" placeholder="Movie Image">
+        </div>
+        <div class="form-group">
+            <label for="genre">Movie Genre:</label>
+            <input id="genre" type="text" name="genre" class="form-control" placeholder="Movie Genre">
+        </div>
+        <div class="form-group">
+            <label for="release">Release Date:</label>
+        <input id="release" type="date" name="relase" class="form-control" placeholder="Movie Release Date">
+        </div>
+        <div class="form-group">
+            <label for="cast">Movie Cast:</label>
+            <input id="cast" type="text" name="cast" class="form-control" placeholder="Movie Cast">
+        </div>
+        <div class="form-group">
+            <label> Movie Plot: <br> <textarea name="plot" placeholder="Movie Plot" cols="138" rows="4"></textarea>
+            </label>
+        </div>
+        <!-- <div class="form-group">
+            <label>Box Office(Budget)</label>
+            <input id="boxoffice1" type="text" name="budget" class="form-control" placeholder="Budget">
+        </div>
+        <div class="form-group">
+            <label for="boxoffice2">Box Office(Profit):</label>
+            <input id="boxoffice2" type="text" name="profit" class="form-control" placeholder="Profit">
+        </div> -->
+        <div class="form-group">
+            <label for="primeLink">Amazon Prime Video Link:</label>
+            <input id="primeLink" type="text" name="link[prime]" class="form-control" placeholder="Amazon Prime Video Link">
+        </div>
+        <div class="form-group">
+            <label for="netflixLink">Netflix Link:</label>
+            <input id="netflixLink" type="text" name="link[netflix]" class="form-control" placeholder="Netflix Link">
+        </div>
+        <div class="form-group">
+            <label for="hotstarLink">Hotstar Link:</label>
+            <input id="hotstarLink" type="text" name="link[hotstar]" class="form-control" placeholder="Hotstar Link">
+        </div>
+        <div class="form-group">
+            <label for="youtubeLink">Youtube Link:</label>
+            <input id="youtubeLink" type="text" name="link[youtube]" class="form-control" placeholder="Youtube Link">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+    </form>
+</div>
+
+<%- include("../partials/footer") %>
